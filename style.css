@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #aad6c0;
+    display: flex;
+    flex-direction: column;
+    color:black;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lato' ,'sans-serif';
+}
+.container{
+    display: flex;
+}
+img{
+    width:30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.seat{
+    background-color: #919195;
+    height: 50px;
+    width: 25px;
+    margin: 5px;
+   border-radius: 4px;
+}
+.row{
+    display: flex;
+}
+.bus-container select{
+    background-color: #fff;
+    border: 0;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 15px 5px 15px;
+    margin-bottom: 50px;
+}
+.lowerdeck{
+    margin-right: 80px;
+}
+.seatlegend{
+    margin-top: 40px;
+}
+.seat.selected{
+    background-color: rgb(61, 114, 61) ;
+}
+.seat.occupied{
+    background-color: rgb(240, 234, 226);
+}
+.seat.female{
+    background-color: rgb(221, 142, 155);
+}
+.seat.male{
+    background-color: rgb(67, 67, 224);
+}
+.seat:nth-of-type(1){
+    margin-right: 25px;
+}
+.seat:not(.occupied):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.showcase .seat:not(.occupied):hover{
+    cursor: default;
+    transform: scale(1);
+}
+.showcase{
+    color: rgb(68, 67, 67) ;
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+.showcase li{
+    margin-left: 15px;
+}
+label{
+text-transform: uppercase;
+font-size: 16px;
+font-weight: bold;
+}
+p{
+    font-size: 14px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
